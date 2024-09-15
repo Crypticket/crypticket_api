@@ -1,0 +1,17 @@
+services:
+  livebackup_user_db:
+    image: postgres:14.1
+    container_name: crypticket_api_db
+    environment:
+      - POSTGRES_PASSWORD=${API_DB_PASSWORD}
+      - POSTGRES_USER=${API_DB_USER}
+      - POSTGRES_DB=${API_DB_DATABASE}
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./api_db/data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
