@@ -8,11 +8,11 @@ export class AccountService {
   constructor(
     @repository(AccountRepository)
     private readonly accountRepository: AccountRepository,
-  ) { }
+  ) {}
 
   async createAccount(newAccount: NewAccount): Promise<Account> {
     // TODO: Verify the email and username are available
     // TODO: Hash the password
-    return this.accountRepository.createOne(newAccount)
+    return this.accountRepository.createOne(newAccount);
   }
 }

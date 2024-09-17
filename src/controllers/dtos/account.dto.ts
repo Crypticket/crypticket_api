@@ -6,22 +6,22 @@ export class AccountDto {
   @property({
     type: 'string',
   })
-  id: string
+  id: string;
 
   @property({
     type: 'string',
   })
-  email: string
+  email: string;
 
   @property({
     type: 'string',
   })
-  username: string
+  username: string;
 
   @property({
     type: 'string',
   })
-  registerDate: Date
+  registerDate: Date;
 
   static fromAccountModel(account: Account): AccountDto {
     return {
@@ -29,6 +29,6 @@ export class AccountDto {
       email: account.email,
       username: account.username,
       registerDate: account.registerDate,
-    }
+    };
   }
 }
