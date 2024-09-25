@@ -3,8 +3,8 @@ import {Entity, model, property} from '@loopback/repository';
 @model({
   settings: {
     idInjection: false,
-    postgresql: {schema: 'public', table: 'account'}
-  }
+    postgresql: {schema: 'public', table: 'account'},
+  },
 })
 export class Account extends Entity {
   @property({
@@ -49,7 +49,6 @@ export class Account extends Entity {
     },
   })
   registerDate: Date;
-
 
   constructor(data?: Partial<Account>) {
     super(data);

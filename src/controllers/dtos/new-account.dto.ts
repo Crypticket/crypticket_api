@@ -9,17 +9,17 @@ export class AccountCreationRequestDto {
       format: 'email',
     },
   })
-  email: string
+  email: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  username: string
+  username: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  password: string
+  password: string;
 }

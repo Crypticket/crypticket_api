@@ -12,7 +12,7 @@ export class AccountService {
   constructor(
     @repository(AccountRepository)
     private readonly accountRepository: AccountRepository,
-  ) { }
+  ) {}
 
   async createAccount(accountCreationRequest: AccountCreationRequest): Promise<Account> {
     //TODO: supongo que primero es verificar que una cuenta con ese correo no exista

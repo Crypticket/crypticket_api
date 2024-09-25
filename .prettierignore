@@ -1,2 +1,3 @@
 dist
 *.json
+api_db/
