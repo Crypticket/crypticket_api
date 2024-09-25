@@ -22,6 +22,10 @@ export class AccountRepository extends DefaultCrudRepository<
   }
 
   async findByEmail(email: string): Promise<Account | null> {
-    return this.findOne({where: {email}})
+    return this.findOne({where: {email}});
+  }
+
+  async findByUsername(username: string): Promise<Account | null> {
+    return this.findOne({where: {username}});
   }
 }

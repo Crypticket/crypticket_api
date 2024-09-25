@@ -49,12 +49,16 @@
     "!*/__tests__"
   ],
   "dependencies": {
+    "@circle-fin/circle-sdk": "^2.9.0",
+    "@circle-fin/developer-controlled-wallets": "^4.4.1",
+    "@circle-fin/smart-contract-platform": "^4.2.1",
     "@loopback/boot": "^7.0.0",
     "@loopback/core": "^6.0.0",
     "@loopback/repository": "^7.0.6",
     "@loopback/rest": "^14.0.0",
     "@loopback/rest-explorer": "^7.0.0",
     "@loopback/service-proxy": "^7.0.0",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "loopback-connector-postgresql": "^7.1.5",
     "tslib": "^2.0.0"
@@ -63,6 +67,7 @@
     "@loopback/build": "^11.0.0",
     "@loopback/eslint-config": "^15.0.0",
     "@loopback/testlab": "^7.0.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^16.18.86",
     "eslint": "^8.57.0",
     "source-map-support": "^0.5.21",

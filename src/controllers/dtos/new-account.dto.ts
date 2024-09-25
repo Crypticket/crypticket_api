@@ -1,7 +1,7 @@
 import {model, property} from '@loopback/repository';
 
 @model()
-export class NewAccountDto {
+export class AccountCreationRequestDto {
   @property({
     type: 'string',
     required: true,

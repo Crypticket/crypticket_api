@@ -35,6 +35,12 @@ export class Account extends Entity {
   password: string;
 
   @property({
+    type: 'string',
+    required: true,
+  })
+  walletId: string;
+
+  @property({
     type: 'date',
     required: true,
     postgresql: {

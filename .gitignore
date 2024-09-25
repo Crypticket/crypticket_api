@@ -68,3 +68,6 @@ typings/
 
 # Emacs auto-save file
 \#*#
+
+
+.idea
